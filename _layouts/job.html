@@ -1,0 +1,161 @@
+---
+layout: default
+---
+
+<style type="text/css">
+
+	.job-title.heading {
+	text-align: center !important;
+	margin-bottom: 30px;
+	}
+  .page-job .sidebar {
+    display: flex;
+    flex-direction: column;
+		flex: 0;
+		min-width: 140px;
+		margin-bottom: 40px;
+  }
+
+  .page-job .sidebar ul {
+    padding: 15px 0;
+  }
+
+  .page-job .sidebar li {
+    margin-top: 18px;
+    opacity: 0.8;
+  }
+
+  .page-job .j-content > .container {
+    display: flex;
+		flex-direction: column;
+    margin-top: 35px;
+		flex-basis: 140px;
+  }
+
+  .page-job .job-description {
+    max-width: 100%;
+  }
+
+  .page-job .apply {
+    margin-top: 15px;
+		max-width: 120px;
+		width: 100%;
+  }
+
+  .page-job .company-description > p, .page-job .requirements p {
+		color: #51516A;
+		text-align: inherit;
+		line-height: 1.8;
+		font-weight: 400;
+
+		font-size: 1rem;
+
+  }
+
+	.page-job .company-description > p {
+		margin-bottom: 30px;
+	}
+
+  .page-job .job-title-main {
+    font-size: 26px;
+    line-height: 1.25;
+    color: #3D3D58;
+    font-weight: bold;
+
+  }
+
+  .page-job .job-description-title {
+    margin-top: 25px;
+		text-align: inherit;
+		font-weight: bold;
+		font-size: 1.6rem;
+		line-height: 1.3;
+		color: #3D3D58;
+		line-height: 3.5rem;
+    margin-bottom: 0;
+}
+
+ 	.page-job .requirements ul {
+    list-style: disc;
+    padding-left: 17px;
+  }
+
+  .page-job .requirements li {
+		padding: 4px 0;
+  }
+
+  .page-job .application-greybox {
+    background-color: #f8f8fa;
+    margin-top: 35px;
+		height: 300px;
+  }
+
+  .page-job .application-greybox a {
+    display: inline-block;
+    color: #4351c5;
+  }
+
+  .page-job .application-information {
+    padding: 50px 0;
+    max-width: 700px;
+    margin: auto auto;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+
+@media (min-width: 980px) {
+
+	.page-job {
+    	padding-top: 20px !important;
+    }
+	.page-job .j-content > .container {
+		flex-direction: row;
+	}
+	.page-job .job-description{
+		margin-left: auto;
+    	margin-right: auto;
+		max-width: 700px;
+	}
+	.page-job {
+		padding-top: 50px;
+	}
+	.page-job .sidebar {
+		margin-bottom: 0px;
+  }
+	.page-job .apply {
+		max-width: 100%;
+  }
+  .page-job .application-information {
+    padding: 50px 0;
+    max-width: 40%;
+    margin: auto auto;
+    line-height: 1.25;
+    text-align: center;
+	}
+}
+</style>
+
+
+<main class="page page-job">
+	<section class="j-content">
+		<div class="container">
+			<div class="job-description">
+				<h1 class="job-title heading">{{ page.title }}</h1>
+				<div class="company-description">
+					<p>
+						At OpenZeppelin, we have built the world’s leading Open Source library for smart contract development. OpenZeppelin Contracts powers over 3,000 public projects, with over 7,000 stars on Github and maintained by a community of 180+ contributors. We also conduct security audits for the Ethereum Foundation, Coinbase, and other leading organizations in the space. 
+					</p>
+					<p>
+						With the success of our product, our security audits work, and our educational efforts, we have set industry standards for building secure systems in a fast-growing industry, which presents new programming paradigms. We are now excited to offer a development platform  that will help the growing number of developers working on top of decentralized protocols build the applications that will reach mass adoption.
+					</p>
+				</div>
+				{{page.content}}
+			</div>
+		</div>
+		<div class="container"></div>
+		<div class="container"></div>
+	</section>
+</main>
+
+<script src="/js/fixedMenu.js"></script>
