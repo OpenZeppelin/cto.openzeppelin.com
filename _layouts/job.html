@@ -5,9 +5,16 @@ layout: default
 <style type="text/css">
 
 	.job-title.heading {
-	text-align: center !important;
-	margin-bottom: 30px;
+  	text-align: center !important;
+  	margin-bottom: 30px;
 	}
+
+	.job-location.heading {
+    text-align: center !important;
+    font-style: italic;
+	  margin-bottom: 30px;
+	}
+
   .page-job .sidebar {
     display: flex;
     flex-direction: column;
@@ -153,6 +160,7 @@ layout: default
 		<div class="container">
 			<div class="job-description">
 				<h1 class="job-title heading">{{ page.title }}</h1>
+        <h2 class="job-location heading">{{ page.location }}</h2>
 				<div class="company-description">
           <h3 class="company-description-title">About us</h3>
 					<p>
