@@ -1,6 +1,6 @@
-# zeppelin-website
+# OpenZeppelin CTO Job Opening Website
 
-The website for zeppelin.
+The website for CTO Job Opening of OpenZeppelin.
 
 - `src` -- contains the jekyll sources for the website itself.
 
